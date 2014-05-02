@@ -1,4 +1,4 @@
-Almac-n-OpenSource
+Almacén-OpenSource
 ==================
 
 Almacén de herramientas y producción.
