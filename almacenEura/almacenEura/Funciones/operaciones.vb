@@ -1,3 +1,0 @@
-﻿Module operaciones
-
-End Module
