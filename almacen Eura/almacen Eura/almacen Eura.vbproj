@@ -70,11 +70,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Modulos\Acceso.Designer.vb">
+      <DependentUpon>Acceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Acceso.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Modulos\Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Panel.Designer.vb">
+      <DependentUpon>Panel.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -94,8 +100,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Modulos\Acceso.resx">
+      <DependentUpon>Acceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Panel.resx">
+      <DependentUpon>Panel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
