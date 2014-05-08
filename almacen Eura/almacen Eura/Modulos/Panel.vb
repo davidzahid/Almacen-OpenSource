@@ -3,7 +3,6 @@
     Private Sub Panel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Acceso.Hide()
 
-        ''  ProveedoresToolStripMenuItem.Enabled = False
 
     End Sub
 
@@ -13,11 +12,30 @@
     End Sub
 
 
-    Private Sub VerLaAyudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VerLaAyudaToolStripMenuItem.Click
+    Private Sub VerLaAyudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles verAyuda.Click
 
     End Sub
 
-    Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
+    Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles acercaDe.Click
+
+    End Sub
+
+
+
+
+    Private Sub cbxUnidad_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+
+
+   
+
+    Private Sub ToolStripContainer1_TopToolStripPanel_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ToolStripLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripLabel1.Click
 
     End Sub
 End Class

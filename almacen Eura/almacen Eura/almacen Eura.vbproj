@@ -76,6 +76,18 @@
     <Compile Include="Modulos\Acceso.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modulos\Acercade.Designer.vb">
+      <DependentUpon>Acercade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Acercade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Entradas.Designer.vb">
+      <DependentUpon>Entradas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Entradas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modulos\Panel.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Modulos\Acceso.resx">
       <DependentUpon>Acceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Acercade.resx">
+      <DependentUpon>Acercade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Entradas.resx">
+      <DependentUpon>Entradas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Panel.resx">
       <DependentUpon>Panel.vb</DependentUpon>
