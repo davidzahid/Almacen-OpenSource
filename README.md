@@ -5,7 +5,6 @@ Almacén de herramientas y producción.
 
 Equipo integrado por:
 
-Jonathan Salas Hernández.
 David Zahid Jimenez Grez.
 Adalberto Vargas Moreno.
 Christian Yamil Castillo Covarrubias
