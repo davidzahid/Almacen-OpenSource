@@ -18,9 +18,7 @@ Forma de trabajo
 
 Fechas importantes
 ==================
-```
 	* Entrega del proyecto: 22/05/2014
-```
 
 ¿Qué debe de llevar el proyecto? (cosas a entregar)
 ==================
