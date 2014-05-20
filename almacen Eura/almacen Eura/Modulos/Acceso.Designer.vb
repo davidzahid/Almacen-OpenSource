@@ -22,11 +22,18 @@ Partial Class Acceso
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblUsuario = New System.Windows.Forms.Label()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.lblContrasena = New System.Windows.Forms.Label()
         Me.txtContrasena = New System.Windows.Forms.TextBox()
         Me.btnAcceder = New System.Windows.Forms.Button()
+        Me.Eura_databaseDataSet = New almacen_Eura.eura_databaseDataSet()
+        Me.EmpleadoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EmpleadoTableAdapter = New almacen_Eura.eura_databaseDataSetTableAdapters.empleadoTableAdapter()
+        Me.TableAdapterManager = New almacen_Eura.eura_databaseDataSetTableAdapters.TableAdapterManager()
+        CType(Me.Eura_databaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblUsuario
@@ -70,11 +77,38 @@ Partial Class Acceso
         Me.btnAcceder.Text = "Acceder"
         Me.btnAcceder.UseVisualStyleBackColor = True
         '
+        'Eura_databaseDataSet
+        '
+        Me.Eura_databaseDataSet.DataSetName = "eura_databaseDataSet"
+        Me.Eura_databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'EmpleadoBindingSource
+        '
+        Me.EmpleadoBindingSource.DataMember = "empleado"
+        Me.EmpleadoBindingSource.DataSource = Me.Eura_databaseDataSet
+        '
+        'EmpleadoTableAdapter
+        '
+        Me.EmpleadoTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.empleadoTableAdapter = Me.EmpleadoTableAdapter
+        Me.TableAdapterManager.entradaTableAdapter = Nothing
+        Me.TableAdapterManager.materialTableAdapter = Nothing
+        Me.TableAdapterManager.movimientos_sistemaTableAdapter = Nothing
+        Me.TableAdapterManager.obra_destinoTableAdapter = Nothing
+        Me.TableAdapterManager.proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.puestoTableAdapter = Nothing
+        Me.TableAdapterManager.salidaTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = almacen_Eura.eura_databaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
         'Acceso
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(258, 244)
         Me.Controls.Add(Me.btnAcceder)
         Me.Controls.Add(Me.txtContrasena)
         Me.Controls.Add(Me.lblContrasena)
@@ -82,6 +116,8 @@ Partial Class Acceso
         Me.Controls.Add(Me.lblUsuario)
         Me.Name = "Acceso"
         Me.Text = "Acceso"
+        CType(Me.Eura_databaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmpleadoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -91,4 +127,8 @@ Partial Class Acceso
     Friend WithEvents lblContrasena As System.Windows.Forms.Label
     Friend WithEvents txtContrasena As System.Windows.Forms.TextBox
     Friend WithEvents btnAcceder As System.Windows.Forms.Button
+    Friend WithEvents Eura_databaseDataSet As almacen_Eura.eura_databaseDataSet
+    Friend WithEvents EmpleadoBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents EmpleadoTableAdapter As almacen_Eura.eura_databaseDataSetTableAdapters.empleadoTableAdapter
+    Friend WithEvents TableAdapterManager As almacen_Eura.eura_databaseDataSetTableAdapters.TableAdapterManager
 End Class
